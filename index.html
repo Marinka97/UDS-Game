@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title> UDS  Game </title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<img src="udslogo.png" alt="" class="img-responsive center-block">
+		<div class="authorization">
+			<h3> Авторизация </h3>
+			<form name="form" action="#" method="post" onsubmit="return validateEmail()" onchange="return validateEmail();">
+				<div class="form-group">
+					<label for="email"> E-Mail </label>
+					<input type="text" class="form-control" id="email" name="email">
+					<h2 id='result'></h2>
+					<span class="error" aria-live="polite"></span>
+				</div>
+				<div class="form-group">
+					<label for="pwd"> Пароль  </label>
+					<input type="password" class="form-control show" id="pwd"> 
+					<button type="submit" class="button btn-primary" onclick="myFunction()">Показать </button>
+				</div>
+				<div class="checkbox">
+					<label> <input type="checkbox"> Запомнить меня </label>
+				</div>
+				<button type="submit" class="btn btn-primary" id="validate"> Войти </button>
+			</form>
+		</div>
+		<h4> <small> Copyright © 2018 — UDS Game </small> </h4>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+
+</html>
